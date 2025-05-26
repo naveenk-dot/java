@@ -1,0 +1,34 @@
+package Sdet;
+
+import java.util.HashMap;
+
+public class countandrpintA {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String str="Naveeenana";
+		
+		int count=0;
+		
+		HashMap<Character, Integer> map=new HashMap<>();
+		
+		for(int i=0; i<=str.length()-1;i++)
+		{
+			if(!map.containsKey(str.charAt(i)))
+			{
+				map.put(str.charAt(i), map.getOrDefault(str.charAt(i), 0)+1);
+			}
+			else {
+				map.put(str.charAt(i), map.get(str.charAt(i))+1);
+			}
+		}
+		
+		for (Character ch: map.keySet())
+		{
+			System.out.println(ch +"  "+map.get(ch));
+		}
+		
+	}
+
+}

@@ -1,0 +1,15 @@
+package Sdet;
+
+public class reversenumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int num=123;
+		
+		int result=num/10;
+		System.out.println(result);
+		
+	}
+
+}
